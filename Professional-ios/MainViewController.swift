@@ -59,7 +59,7 @@ class view2:UIViewController{
 
 class view3:UIViewController{
     override func viewDidLoad() {
-        view.backgroundColor = .systemGray
+        view.backgroundColor = .systemGreen
     }
 }
 
