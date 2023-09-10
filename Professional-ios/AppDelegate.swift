@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+let appColor:UIColor = .systemTeal
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window:UIWindow?
