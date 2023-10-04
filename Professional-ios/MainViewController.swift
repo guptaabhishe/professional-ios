@@ -16,7 +16,7 @@ class MainViewController: UITabBarController {
     }
     
     private func setUp(){
-          let v1 = view1()
+          let v1 = AccountSummaryViewController()
           let v2 = view2()
           let v3 = view3()
         v1.setTabImageAndTitle(imageName: "list.dash.header.rectangle", title: "Summary")

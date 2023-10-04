@@ -5,10 +5,29 @@
 //  Created by Abhishek Gupta on 14/09/23.
 //
 
-import Foundation
 import UIKit
 
 class AccountSummaryCell:UITableViewCell{
+    
+    enum AccountType:String {
+      
+      case Banking
+      case CreditCard
+      case Investment
+    }
+    
+    struct ViewModel{
+        let accountType:AccountType
+        let accountName:String
+        let balance:Decimal
+        
+        var balanceAsAttributedString:NSAttributedString {
+            return CurrencyFormatter().makeAttributedCurrency(balance)
+        }
+    }
+    
+    let viewModel:ViewModel? = nil
+    
     
     let typeLabel = UILabel()
     let underlineView = UIView()
@@ -21,7 +40,7 @@ class AccountSummaryCell:UITableViewCell{
     let chevronImageView = UIImageView()
     
     static let reuseID = "AccountSummaryCell"
-    static let rowHeight:CGFloat = 100
+    static let rowHeight:CGFloat = 112
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
@@ -63,7 +82,7 @@ extension AccountSummaryCell {
         balanceLabel.textAlignment = .right
         
         balanceAmountLabel.translatesAutoresizingMaskIntoConstraints = false
-        balanceAmountLabel.text = "$929, 466.23"
+        balanceAmountLabel.attributedText = makeFormattedBalance(dollars: "929,466", cents: "23")
         balanceAmountLabel.textAlignment = .right
         
         contentView.addSubview(balanceStackView)
@@ -97,7 +116,45 @@ extension AccountSummaryCell {
             trailingAnchor.constraint(equalToSystemSpacingAfter: chevronImageView.trailingAnchor, multiplier: 1),
             chevronImageView.topAnchor.constraint(equalToSystemSpacingBelow: underlineView.bottomAnchor, multiplier: 1)
             
-        ]) 
+        ])
         
+    }
+}
+
+extension AccountSummaryCell{
+    private func makeFormattedBalance(dollars:String , cents:String) -> NSMutableAttributedString {
+        
+        let dollarSignAttributes:[NSAttributedString.Key:Any] = [.font:UIFont.preferredFont(forTextStyle: .callout), .baselineOffset:8]
+        
+        let dollarAttribues:[NSAttributedString.Key:Any] = [.font:UIFont.preferredFont(forTextStyle: .title1)]
+        
+        let centAttributes:[NSAttributedString.Key:Any] = [.font:UIFont.preferredFont(forTextStyle: .footnote), .baselineOffset:8]
+        
+        let rootString = NSMutableAttributedString(string: "$" , attributes: dollarSignAttributes)
+        rootString.append(NSAttributedString(string: dollars , attributes: dollarAttribues))
+        rootString.append(NSAttributedString(string: cents, attributes: centAttributes))
+        
+        return rootString
+        
+    }
+}
+
+extension AccountSummaryCell {
+    func configure(with vm:ViewModel){
+        typeLabel.text = vm.accountType.rawValue
+        nameLabel.text = vm.accountName
+        balanceAmountLabel.attributedText = vm.balanceAsAttributedString
+        
+        switch vm.accountType{
+        case .Banking:
+            balanceLabel.text = "Current balance"
+            break
+        case .Investment:
+            balanceLabel.text = "Current balance"
+            break
+        case .CreditCard:
+            balanceLabel.text = "Value  "
+            break
+        }
     }
 }

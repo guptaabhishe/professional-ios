@@ -13,7 +13,7 @@ extension UIViewController{
         let frame = CGRect(origin: .zero, size: statusBarSize)
         let statusbarView = UIView(frame: frame)
 
-        statusbarView.backgroundColor = .secondarySystemBackground
+        statusbarView.backgroundColor = appColor
         view.addSubview(statusbarView)
     }
     func setTabImageAndTitle(imageName:String , title:String){

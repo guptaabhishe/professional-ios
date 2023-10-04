@@ -13,20 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
     let dummyController = DummyViewController()
-
+    let mainViewController = MainViewController()
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.backgroundColor = .systemBackground
-        //window?.rootViewController = loginViewController
-        window?.rootViewController = AccountSummaryViewController()
-
+        
         loginViewController.delegate = self
         onboardingContainerViewController.delegate = self
-        dummyController.delegate = self
-       // onboardingContainerViewControll
-        //window?.rootViewController = onboardingContainerViewController
         
+        let vc = mainViewController
+        vc.setStatusBar()
+        
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = appColor
+        
+        window?.rootViewController = vc
         return true
     }
 }
@@ -34,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate:LoginViewControllerDelegate {
     func didLogin() {
         if LocalState.hasOnboarded {
-            setViewController(for: dummyController)
+            setViewController(for: mainViewController)
         }else{
             setViewController(for: onboardingContainerViewController)
         }
