@@ -17,13 +17,12 @@
 		778556A72ABDCA31004B53D2 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778556A62ABDCA31004B53D2 /* CurrencyFormatter.swift */; };
 		77CB7DC32AA39F360059B7F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB7DC22AA39F360059B7F8 /* MainViewController.swift */; };
 		77CB7DC52AA39FFC0059B7F8 /* ViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB7DC42AA39FFC0059B7F8 /* ViewController+Utils.swift */; };
+		77F340EA2AD0F98C004380B3 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F340E92AD0F98C004380B3 /* NSNotificationName.swift */; };
+		77F340EC2AD0FD68004380B3 /* UITextfeild+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F340EB2AD0FD68004380B3 /* UITextfeild+SecureToggle.swift */; };
 		77F3759B2A90B721002E663F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3759A2A90B721002E663F /* AppDelegate.swift */; };
 		77F3759F2A90B721002E663F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3759E2A90B721002E663F /* LoginViewController.swift */; };
 		77F375A42A90B722002E663F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F375A32A90B722002E663F /* Assets.xcassets */; };
 		77F375A72A90B722002E663F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F375A52A90B722002E663F /* LaunchScreen.storyboard */; };
-		77F375B22A90B722002E663F /* Professional_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F375B12A90B722002E663F /* Professional_iosTests.swift */; };
-		77F375BC2A90B722002E663F /* Professional_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F375BB2A90B722002E663F /* Professional_iosUITests.swift */; };
-		77F375BE2A90B722002E663F /* Professional_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F375BD2A90B722002E663F /* Professional_iosUITestsLaunchTests.swift */; };
 		77F375CD2A90BBEC002E663F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F375CC2A90BBEC002E663F /* LoginView.swift */; };
 		77F375CF2A914D0A002E663F /* LoginHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F375CE2A914D0A002E663F /* LoginHeader.swift */; };
 		77FF5EB32AA7A02C00728127 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF5EB22AA7A02C00728127 /* AccountSummaryViewController.swift */; };
@@ -67,6 +66,8 @@
 		778556A62ABDCA31004B53D2 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		77CB7DC22AA39F360059B7F8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		77CB7DC42AA39FFC0059B7F8 /* ViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Utils.swift"; sourceTree = "<group>"; };
+		77F340E92AD0F98C004380B3 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
+		77F340EB2AD0FD68004380B3 /* UITextfeild+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfeild+SecureToggle.swift"; sourceTree = "<group>"; };
 		77F375972A90B721002E663F /* Professional-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Professional-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F3759A2A90B721002E663F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77F3759E2A90B721002E663F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -74,10 +75,7 @@
 		77F375A62A90B722002E663F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77F375A82A90B722002E663F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77F375AD2A90B722002E663F /* Professional-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Professional-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77F375B12A90B722002E663F /* Professional_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professional_iosTests.swift; sourceTree = "<group>"; };
 		77F375B72A90B722002E663F /* Professional-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Professional-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77F375BB2A90B722002E663F /* Professional_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professional_iosUITests.swift; sourceTree = "<group>"; };
-		77F375BD2A90B722002E663F /* Professional_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professional_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		77F375CC2A90BBEC002E663F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		77F375CE2A914D0A002E663F /* LoginHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeader.swift; sourceTree = "<group>"; };
 		77FF5EB22AA7A02C00728127 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +131,8 @@
 				77CB7DC42AA39FFC0059B7F8 /* ViewController+Utils.swift */,
 				778556A42ABDC98F004B53D2 /* DecimalUtil.swift */,
 				778556A62ABDCA31004B53D2 /* CurrencyFormatter.swift */,
+				77F340E92AD0F98C004380B3 /* NSNotificationName.swift */,
+				77F340EB2AD0FD68004380B3 /* UITextfeild+SecureToggle.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -196,31 +196,12 @@
 			path = "Professional-ios";
 			sourceTree = "<group>";
 		};
-		77F375B02A90B722002E663F /* Professional-iosTests */ = {
-			isa = PBXGroup;
-			children = (
-				77F375B12A90B722002E663F /* Professional_iosTests.swift */,
-			);
-			path = "Professional-iosTests";
-			sourceTree = "<group>";
-		};
-		77F375BA2A90B722002E663F /* Professional-iosUITests */ = {
-			isa = PBXGroup;
-			children = (
-				77F375BB2A90B722002E663F /* Professional_iosUITests.swift */,
-				77F375BD2A90B722002E663F /* Professional_iosUITestsLaunchTests.swift */,
-			);
-			path = "Professional-iosUITests";
-			sourceTree = "<group>";
-		};
 		77F375CA2A90BACB002E663F /* Files */ = {
 			isa = PBXGroup;
 			children = (
 				77F375A32A90B722002E663F /* Assets.xcassets */,
 				77F375A52A90B722002E663F /* LaunchScreen.storyboard */,
 				77F375A82A90B722002E663F /* Info.plist */,
-				77F375B02A90B722002E663F /* Professional-iosTests */,
-				77F375BA2A90B722002E663F /* Professional-iosUITests */,
 			);
 			name = Files;
 			sourceTree = "<group>";
@@ -428,8 +409,10 @@
 				77CB7DC52AA39FFC0059B7F8 /* ViewController+Utils.swift in Sources */,
 				77CB7DC32AA39F360059B7F8 /* MainViewController.swift in Sources */,
 				77FF5EB32AA7A02C00728127 /* AccountSummaryViewController.swift in Sources */,
+				77F340EA2AD0F98C004380B3 /* NSNotificationName.swift in Sources */,
 				778556A52ABDC98F004B53D2 /* DecimalUtil.swift in Sources */,
 				77F3759B2A90B721002E663F /* AppDelegate.swift in Sources */,
+				77F340EC2AD0FD68004380B3 /* UITextfeild+SecureToggle.swift in Sources */,
 				77135D9D2A9A2B2A00896066 /* LocalState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +421,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77F375B22A90B722002E663F /* Professional_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,8 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77F375BC2A90B722002E663F /* Professional_iosUITests.swift in Sources */,
-				77F375BE2A90B722002E663F /* Professional_iosUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
